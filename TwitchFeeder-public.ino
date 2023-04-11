@@ -42,7 +42,7 @@ int Feeder = 4;  //this is the pin the servo connects to
 int feedcount = 0;
 int allfeed = 0;
 int yesterfeed = 0;
-String ircChannel = "";
+String ircChannel = ""; //leave this line blank.
 
 WiFiClient wiFiClient;
 IRCClient client(IRC_SERVER, IRC_PORT, wiFiClient);
@@ -174,6 +174,7 @@ delay (750);
 servo.write(90);
 Serial.println("Fed birds "+ String(feedcount) +" times");
 }
+      
 if (ircMessage.text.indexOf("is now live") > -1 && ircMessage.nick == "STREAMELEMENTS") //
 {
   
