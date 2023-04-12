@@ -57,6 +57,8 @@ void setup() {
   pinMode(Feeder, OUTPUT);
   servo.attach(Feeder);
   servo.write(90); //stop on a continuous servo
+  delay(100);
+  servo.detach();
   delay(2000);
   Serial.begin(115200);
   Serial.println();
@@ -169,9 +171,13 @@ feedcount++;
 allfeed++;
 
 sendTwitchMessage("Chickens fed " + String(feedcount) + " times!");
+servo.attach(Feeder);
+delay(100);
 servo.write(45);
 delay (750);
 servo.write(90);
+delay(100);
+servo.detach();
 Serial.println("Fed birds "+ String(feedcount) +" times");
 }
       
