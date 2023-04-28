@@ -11,4 +11,4 @@ You'll have to use a 1.25 hole saw to ream out the through hole of the T, or the
 
 Print the STL files included in this repository, I used food safe PETG, but you can probably get away with just about anything. STL files from https://www.thingiverse.com/thing:2387904 My thanks to rubatan for designing them!
 
-The body of the box was cut out of 3mm baltic birch on a laser cutter. The Lightburn file includes all the parts you need, fit into 12x20 frames for ease of cutting. (TODO: add to repository)
+The body of the box was cut out of 3mm baltic birch on a laser cutter. The Lightburn file includes all the parts you need, fit into 12x20 frames for ease of cutting. 
